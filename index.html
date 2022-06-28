@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        hr {
+            width: 100vw;
+            height: 2px;
+            background-color: black;
+        }
+
+
+        #board {
+            width: 450px;
+            height: 450px;
+            /* background-color: rgb(106, 0, 106); */
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tile {
+            width: 147px;
+            height: 147px;
+
+            /* Text */
+            font-size: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .winner {
+            background-color: rgb(54, 48, 48);
+            color: rgb(149, 255, 68);
+        }
+
+
+        .horizontal-line {
+            border-bottom: 3px solid black;
+        }
+
+        .vertical-line {
+            border-right: 3px solid black;
+        }
+
+        @media (max-width: 430px) {
+            #board {
+                width: 343px;
+                height: 343px;
+                margin: 0 0.3rem;
+            }
+
+            .tile {
+                width: 110px;
+                height: 125px;
+                font-size: 123px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <hr>
+    <br>
+    <!-- 3x3 -->
+    <div id="board"></div>
+
+    <br>
+    <h2 style="margin-top: 1.5rem;opacity:0.4 ;">Refresh for restart</h2>
+
+
+</body>
+<script src="tictactoe.js"></script>
+
+</html>
